@@ -15,7 +15,7 @@ if (CURL_FOUND)
 endif()
 
 add_executable(teleboba main.cpp
-    date.cpp content.cpp user.cpp)
+    date.cpp content.cpp account.cpp)
 
 target_link_libraries(teleboba /usr/local/lib/libTgBot.a ${CMAKE_THREAD_LIBS_INIT} ${OPENSSL_LIBRARIES} ${Boost_LIBRARIES} ${CURL_LIBRARIES})
 
